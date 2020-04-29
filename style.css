@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Aller';
+    src: url('font-aller/Aller_Rg.ttf');
+}
+.encart {
+    color : green;
+}
+
+#mainTitle {
+    font-family: 'Aller';
+    font-size : 2,5em;
+    text-align : center;
+    border : 2mm ridge rgba(218, 66, 79, 0.863);
+}
+.mainTitleImg {
+    height: 300px;
+    background-image: url(image/flowers.jpg);
+    background-size: cover;
+    border: 2px solid darkgray;
+    color: #000; text-shadow: 1px 1px 0 #fff;
+    opacity: 0.7;
+}
+
+#nav{
+  /*   background-color:  rgba(66, 218, 112, 0.863);*/
+    display: flex;
+    list-style: none;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    min-height: 30px;
+}
+
+
+#nav-home {
+ /*    background-color:  rgba(66, 175, 218, 0.863);*/
+    width:20%;
+    text-align: center;
+}
+#nav-projects {
+/*    background-color:  rgba(66, 114, 218, 0.863); */
+    width:20%;
+    text-align: center;
+}
+
+#nav-cv {
+ /*    background-color:  rgba(99, 66, 218, 0.863);*/
+    width:20%;
+    text-align: center;
+}
+
+#body {
+    width: 70%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+h2, h3 {
+    font-family: 'Aller';
+}
+
