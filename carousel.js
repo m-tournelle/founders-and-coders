@@ -10,6 +10,11 @@ function createCarousel() {
         imagesList.style.left = "-" + currentImage * carouselWidth + "px";
     }
 
+    window.addEventListener('resize', function () {
+        carouselWidth = carousel.offsetWidth;
+        setLeftPosition(currentImage);
+    });
+
     function goNext() {
         if (currentImage < items) {
             currentImage++;
