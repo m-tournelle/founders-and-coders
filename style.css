@@ -83,8 +83,9 @@ section{
 }
 
 #encart {
-    color : green;
+    text-align: justify;
     flex : 3;
+    padding-right: 30px;
 }
 #survey{
     flex:1.5;
