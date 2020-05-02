@@ -77,10 +77,20 @@ function submitSurvey(){
         if(p1.checked && p2.checked && p3.checked && p4.checked && p5.checked){alert("I am what you are looking for !")}
         else{
             alert("We have nobody like this in our database, please try again")
-};
+        };
     }
 
     check()
 }
 
-window.onload = createCarousel;
+function preventReloadOnSubmit(){
+    var formSurvey = document.getElementById("formSurvey");
+    formSurvey.addEventListener("submit", function(e) {
+        e.preventDefault();
+    });
+}
+
+window.onload = function(){
+    preventReloadOnSubmit();
+    createCarousel();
+}
