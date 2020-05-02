@@ -20,6 +20,9 @@
     color: #000; text-shadow: 1px 1px 0 #fff;
     opacity: 0.7;
 }
+/* 
+    nav
+*/
 
 #nav{
   /*   background-color:  rgba(66, 218, 112, 0.863);*/
@@ -32,7 +35,6 @@
     min-height: 30px;
 }
 
-
 #nav-home {
  /*    background-color:  rgba(66, 175, 218, 0.863);*/
     width:20%;
@@ -43,12 +45,15 @@
     width:20%;
     text-align: center;
 }
-
 #nav-cv {
  /*    background-color:  rgba(99, 66, 218, 0.863);*/
     width:20%;
     text-align: center;
 }
+
+/* 
+    Body
+*/
 
 #body {
     width: 70%;
@@ -80,7 +85,7 @@ a:link {
     /*background-color: purple;*/
   }
   
-  #imagesList{
+#imagesList{
     position: relative;
     list-style: none;
     height: 100%;
@@ -90,13 +95,13 @@ a:link {
     transition: all 1000ms ease;
     left: 0
   }
-  #imagesList li {
+#imagesList li {
     position: relative;
     height: 100%;
     width: calc(70vw);
     float: left;
   }
-  #imagesList li img {
+#imagesList li img {
     height: 100%;
     width: 100%;
   }
