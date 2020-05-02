@@ -107,7 +107,7 @@ a:link {
   }
 
 #prevImage, #nextImage, #playPause {
-    font-size: 2rem;
+    font-size: 4vw;
     color: white;
     position: absolute;
     cursor: pointer;
@@ -125,6 +125,6 @@ a:link {
   }
   
 #playPause {
-    top: 90%;
+    bottom: 4%;
     left: 50%;
 }
