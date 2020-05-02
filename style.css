@@ -100,3 +100,20 @@ a:link {
     height: 100%;
     width: 100%;
   }
+
+#prevImage, #nextImage {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+  }
+  
+#prevImage {
+    cursor: pointer;
+    left: 15px;
+  }
+#nextImage {
+    cursor: pointer;
+    right: 15px;
+  }
+  
