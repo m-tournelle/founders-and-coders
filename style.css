@@ -69,9 +69,10 @@ a:link {
     cursor: pointer;
   }
 
-#contact-link {
-    list-style: none;
-}
+
+
+
+
 /*
     Section
 */
@@ -179,4 +180,58 @@ section{
 #playPause {
     bottom: 4%;
     left: 50%;
+}
+
+
+/*
+    Footer
+*/
+
+footer{
+    display: flex;
+    
+    border-radius: 15px;
+    padding: 5px;
+    margin: 15px, 5px, 0px, 5px;
+    background-color: rgb(243, 250, 211); 
+
+}
+#signature {
+    flex: 5;
+    font-family: "Courier New", Courier, monospace;
+    align-items: center;
+    margin: auto;
+}
+
+#portfolio{
+    flex: 1;
+    margin: 5px;
+    padding: 5px;
+    text-align: right;
+}
+
+#contact-link{
+    flex: 2;
+    display: flex;
+    width: 20%;
+    margin: auto;
+}
+
+#contact-link img{
+    min-width: 20px;
+    max-width: 30px;
+    height: auto;
+    justify-content: flex-end;
+    align-items: center;
+ 
+}
+
+#codewars{
+    margin: auto;
+}
+#freecodecamp{
+    margin: auto;
+}
+#github{
+    margin: auto;
 }
