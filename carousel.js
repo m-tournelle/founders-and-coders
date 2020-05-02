@@ -3,6 +3,8 @@ function createCarousel() {
     let imagesList = document.getElementById("imagesList");
     let prevImage = document.getElementById("prevImage");
     let nextImage = document.getElementById("nextImage");
+    let playPauseButton = document.getElementById("playPause");
+    let play = true;
     let currentImage = 0;
     let carouselWidth = carousel.offsetWidth;
 
@@ -29,18 +31,26 @@ function createCarousel() {
       };
     
     function goNext() {
-        if (currentImage < items) {
-            currentImage++;
-            setLeftPosition(currentImage);
-        } else {
-            currentImage = 0
-            setLeftPosition(currentImage);
-        }
+            if (currentImage < items) {
+                currentImage++;
+                setLeftPosition(currentImage);
+            } else {
+                currentImage = 0
+                setLeftPosition(currentImage);
+            }
     };
 
-    setInterval(goNext, 4000);
+    function playPause(){
+        if(play) {goNext()}
+    }
+    function playPauseToggle(){
+        play = !play;
+    }
+
+    setInterval(playPause, 4000);
     prevImage.addEventListener("click", goPrev);
     nextImage.addEventListener("click", goNext);
+    playPauseButton.addEventListener("click", playPauseToggle)
 };
 
 

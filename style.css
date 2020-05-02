@@ -106,19 +106,25 @@ a:link {
     width: 100%;
   }
 
-#prevImage, #nextImage {
+#prevImage, #nextImage, #playPause {
     font-size: 2rem;
     color: white;
     position: absolute;
+    cursor: pointer;
+}
+
+#prevImage, #nextImage {
     top: 50%;
   }
   
 #prevImage {
-    cursor: pointer;
     left: 15px;
   }
 #nextImage {
-    cursor: pointer;
     right: 15px;
   }
   
+#playPause {
+    top: 90%;
+    left: 50%;
+}
