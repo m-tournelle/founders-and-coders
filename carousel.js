@@ -63,6 +63,9 @@ function createCarousel() {
     prevImage.addEventListener("click", goPrev);
     document.addEventListener("keyup", goKey);
     nextImage.addEventListener("click", goNext);
+    playPauseButton.addEventListener("click", playPauseToggle);
+};
+
 function submitSurvey(){
     let p1 = document.getElementById("p1");
     let p2 = document.getElementById("p2");
