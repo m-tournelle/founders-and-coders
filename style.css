@@ -2,18 +2,17 @@
     font-family: 'Aller';
     src: url('font-aller/Aller_Rg.ttf');
 }
-.encart {
-    color : green;
-}
 
 #mainTitle {
     font-family: 'Aller';
     font-size : 2,5em;
     text-align : center;
     border : 2mm ridge rgba(218, 66, 79, 0.863);
+    width: 33vw;
+    margin: auto;
 }
 .mainTitleImg {
-    height: 300px;
+    height: 150px;
     background-image: url(image/flowers.jpg);
     background-size: cover;
     border: 2px solid darkgray;
@@ -81,23 +80,30 @@ section{
     display : flex;
     align-items: center;
     justify-content: space-around;
-   
 }
 
+#encart {
+    color : green;
+    flex : 3;
+}
 #survey{
     flex:1.5;
     border-radius: 15px;
-    padding: 15px;
-    margin: 15px;
+    padding: 5px;
+    margin: 15px, 5px, 15px, 5px;
     background-color: rgb(243, 250, 211); 
+}
+
+#survey h2{
+    text-align: center;
 }
 
 #survey ul{
     list-style: none;
     width: 80%;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    line-height: 1.7em
+    line-height: 1.7em;
+    text-align: left;
+    padding: 10px;
 }
 /*
     Survey
@@ -112,6 +118,7 @@ section{
     font-family: 'Aller';
     font-size : 1em;
     cursor: pointer;
+    margin-left: 50%;;
 }
 
 

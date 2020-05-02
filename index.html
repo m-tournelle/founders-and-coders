@@ -10,7 +10,7 @@
 <body>
     <header id=header>
         <h1 id=mainTitle>Hello Founders and coders !</h1>
-        
+
     </header>
 
     <nav>
@@ -23,19 +23,34 @@
 
     <body id=body>
         <div class="mainTitleImg"> </div>
+        <h2>My HTLM skeleton</h2>
         <section>
-            <h2>My HTLM skeleton</h2>
-            <div class=encart>
+            
+            <div id=encart>
                 <h3>About me</h3>
                 <ol>
                     <li>first</li>
                     <li>second</li>
                     <li>third</li>
                 </ol>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam faucibus lorem sit amet ipsum egestas, at tincidunt turpis malesuada.
+                    Curabitur bibendum tincidunt ipsum, id venenatis dui. Mauris tempus efficitur ante. Cras est nunc, mattis nec pretium at, aliquet sed ligula. 
+                    Maecenas eget dui id libero tempus lobortis. Aenean enim velit, mattis non cursus vitae, facilisis nec purus. Sed ut eleifend est. 
+                    Sed elit odio, congue a convallis ac, varius sed diam. Fusce vehicula ipsum vel dictum pulvinar. Quisque fermentum augue ac porttitor ultricies. 
+                    Etiam massa mi, sagittis nec ante in, scelerisque vehicula mauris. Suspendisse egestas turpis ac diam aliquet tincidunt. Sed euismod erat non enim 
+                    accumsan, nec interdum ex tincidunt. Maecenas nec mattis eros. Maecenas posuere et nisl vel aliquam. Donec ut tortor imperdiet purus faucibus interdum. 
+                    Proin viverra lectus velit, vel condimentum sem pretium in. Curabitur luctus id magna at pharetra. Class aptent taciti sociosqu ad litora 
+                    torquent per conubia nostra, per inceptos himenaeos. Donec tincidunt, dolor sed blandit ultricies, erat eros fringilla felis, eget rutrum metus massa 
+                    sed tortor. Suspendisse dapibus justo augue, vitae cursus orci finibus sed. <br>
+                    Etiam suscipit est justo, eget finibus felis rhoncus eget. Suspendisse lobortis mauris at est rutrum convallis. 
+                    Morbi dapibus nulla a diam cursus lobortis. Integer a lectus in orci interdum sagittis ac in risus. Curabitur suscipit risus sit amet tortor semper, 
+                    non ultrices tortor varius. Aliquam risus orci, feugiat et enim ac, dictum auctor felis. Maecenas tempor arcu non pellentesque consequat. Maecenas 
+                    iaculis eu lorem ac convallis. Suspendisse posuere massa condimentum, pulvinar nunc sed, scelerisque dolor. Nam vel placerat tellus. Etiam dui erat,
+                     congue sit amet fermentum ut, varius a erat.</p>
             </div>
             <div id="survey">
                 <h2> What is your ideal candidat ? </h2>
-                <form name ="formSurvey" class="form" onsubmit="return submitSurvey()">
+                <form name ="formSurvey" class="form" id="formSurvey" onsubmit="return submitSurvey()">
                     <ul>
                         <li><label><input type="checkbox" name="personality" id="p1"> Serious about a career in web development </label>  </li>
                         <li><label><input type="checkbox" name="personality" id="p2"> Comfortable with uncertainty </label>  </li>
@@ -43,7 +58,7 @@
                         <li><label><input type="checkbox" name="personality" id="p4"> Believes strongly in the value of community </label> </li>
                         <li> <label><input type="checkbox" name="personality" id="p5"> Do the best to help the others </label> </li>
                     </ul>
-
+                   
                     <button id="submitButton" type="submit">Submit</button>
                 </form>
             </div>
@@ -63,7 +78,7 @@
                     <li><img src="image/carousel/red.jpg" alt="red"></li>
                     <li><img src="image/carousel/yellow.jpg" alt="yellow"></li>
                 </ul>
-                <div id="prevImage"> < </div>
+                <div id="prevImage"> < </div> 
                 <div id="nextImage"> > </div>
                 <div id="playPause"> >|| </div>
             </div>
@@ -76,12 +91,12 @@
         <div id=contact>
             <p>Portfolio:</p>
             <ul id=contact-link>
-                <li> <a href=https://github.com/m-tournelle/founders-and-coders> Github </a></li>
-                <li> <a href=https://www.codewars.com/users/m-tournelle> Codewar</a></li> 
-                <li> <a href=https://www.freecodecamp.org/fcc636985a4-1f4a-4d48-b14b-8f7e3952dd1c> Freecodecamp </a></li>
-            </ul>
-        </div>
-    </footer>
+                <li><a href=https://github.com/m-tournelle/founders-and-coders> Github </a></li> 
+                <li><a href=https://www.codewars.com/users/m-tournelle> Codewar</a></li>
+                <li><a href=https://www.freecodecamp.org/fcc636985a4-1f4a-4d48-b14b-8f7e3952dd1c> Freecodecamp</a></li>
+            </ul> 
+        </div> 
+    </footer> 
 
     <script type="text/javascript" src="carousel.js"></script>
 
