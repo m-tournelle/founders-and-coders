@@ -33,11 +33,20 @@
                     <li>third</li>
                 </ol>
             </div>
-            
-        </section>
+            <div id="survey">
+                <h2> What is your ideal candidat ? </h2>
+                <form name ="formSurvey" class="form" onsubmit="return submitSurvey()">
+                    <ul>
+                        <li><label><input type="checkbox" name="personality" id="p1"> Serious about a career in web development </label>  </li>
+                        <li><label><input type="checkbox" name="personality" id="p2"> Comfortable with uncertainty </label>  </li>
+                        <li><label><input type="checkbox" name="personality" id="p3"> Loves to take initiatives </label> </li>
+                        <li><label><input type="checkbox" name="personality" id="p4"> Believes strongly in the value of community </label> </li>
+                        <li> <label><input type="checkbox" name="personality" id="p5"> Do the best to help the others </label> </li>
+                    </ul>
 
-        <section>
-            <!-- Survey : Radio Buttons, Checkboxes, text field-->
+                    <button id="submitButton" type="submit">Submit</button>
+                </form>
+            </div>
         </section>
 
         <section>
