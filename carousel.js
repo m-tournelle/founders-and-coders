@@ -20,35 +20,48 @@ function createCarousel() {
     });
 
     function goPrev() {
-        if(currentImage > 0) {
-          currentImage--;
-          setLeftPosition(currentImage);
+        if (currentImage > 0) {
+            currentImage--;
+            setLeftPosition(currentImage);
         }
         else {
-          currentImage = items - 1;
-          setLeftPosition(currentImage);
+            currentImage = items - 1;
+            setLeftPosition(currentImage);
         }
-      };
-    
-    function goNext() {
-            if (currentImage < items) {
-                currentImage++;
-                setLeftPosition(currentImage);
-            } else {
-                currentImage = 0
-                setLeftPosition(currentImage);
-            }
     };
 
-    function playPause(){
-        if(play) {goNext()}
+    function goNext() {
+        if (currentImage < items) {
+            currentImage++;
+            setLeftPosition(currentImage);
+        } else {
+            currentImage = 0
+            setLeftPosition(currentImage);
+        }
+    };
+
+    function goKey() {
+        if (event.keyCode === 37) {
+            goPrev()
+        }
+        else if (event.keyCode === 39) {
+            goNext()
+        }
+        else if (event.keyCode === 32) {
+            playPauseToggle()
+        }
     }
-    function playPauseToggle(){
+
+    function playPause() {
+        if (play) { goNext() }
+    }
+    function playPauseToggle() {
         play = !play;
     }
 
     setInterval(playPause, 4000);
     prevImage.addEventListener("click", goPrev);
+    document.addEventListener("keyup", goKey);
     nextImage.addEventListener("click", goNext);
     playPauseButton.addEventListener("click", playPauseToggle)
 };
