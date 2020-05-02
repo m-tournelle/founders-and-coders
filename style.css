@@ -86,6 +86,12 @@ section{
     flex : 3;
     padding-right: 30px;
 }
+
+p{
+    line-height: 1.5em;
+    font-size: 1em ;
+}
+
 #survey{
     flex:1.5;
     border-radius: 15px;
