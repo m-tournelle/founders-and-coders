@@ -12,14 +12,14 @@ function createCarousel() {
     let items = imagesList.querySelectorAll("li").length - 1;
 
     let isMoving = false;
-    imagesList.addEventListener("transitionstart", function() {isMoving = true;} );
-    imagesList.addEventListener("transitionend", function() {isMoving = false;} );
+    imagesList.addEventListener("transitionstart", function() { isMoving = true; });
+    imagesList.addEventListener("transitionend", function() { isMoving = false; });
 
     function setLeftPosition(currentImage) {
         imagesList.style.left = "-" + currentImage * carouselWidth + "px";
     }
 
-    window.addEventListener('resize', function () {
+    window.addEventListener('resize', function() {
         carouselWidth = carousel.offsetWidth;
         setLeftPosition(currentImage);
     });
@@ -28,8 +28,7 @@ function createCarousel() {
         if (currentImage > 0) {
             currentImage--;
             setLeftPosition(currentImage);
-        }
-        else {
+        } else {
             currentImage = items - 1;
             setLeftPosition(currentImage);
         }
@@ -48,20 +47,22 @@ function createCarousel() {
     function goKey() {
         if (event.keyCode === 37) {
             goPrev()
-        }
-        else if (event.keyCode === 39) {
+        } else if (event.keyCode === 39) {
             goNext()
-        }
-        else if (event.keyCode === 32) {
+        } else if (event.keyCode === 32) {
             playPauseToggle()
         }
     }
-    function changeImage(playPauseButton){
+
+    function changeImage(playPauseButton) {
         let v = playPauseButton.getAttribute("src");
-       if(v == "image/carousel/play-button.png"){v = "image/carousel/pause-button.png"}
-        else{v = "image/carousel/play-button.png"};
-         playPauseButton.setAttribute("src", v);	
-     }
+        if (v == "image/carousel/play-button.png") {
+            v = "image/carousel/pause-button.png" }
+        else {
+            v = "image/carousel/play-button.png"
+        };
+        playPauseButton.setAttribute("src", v);
+    }
 
     function playPause() {
         // does not play if carousel is already manually being moved
@@ -85,7 +86,7 @@ function createCarousel() {
 //          Survey
 
 
-function submitSurvey(){
+function submitSurvey() {
     let p1 = document.getElementById("p1");
     let p2 = document.getElementById("p2");
     let p3 = document.getElementById("p3");
@@ -93,8 +94,9 @@ function submitSurvey(){
     let p5 = document.getElementById("p5");
 
     function check() {
-        if(p1.checked && p2.checked && p3.checked && p4.checked && p5.checked){alert("I am what you are looking for !")}
-        else{
+        if (p1.checked && p2.checked && p3.checked && p4.checked && p5.checked) {
+            alert("I am what you are looking for !") }
+        else {
             alert("We have nobody like this in our database, please try again")
         };
     }
@@ -102,8 +104,8 @@ function submitSurvey(){
     check()
 }
 
-function preventReloadOnSubmit(){
-    var formSurvey = document.getElementById("formSurvey");
+function preventReloadOnSubmit() {
+    let formSurvey = document.getElementById("formSurvey");
     formSurvey.addEventListener("submit", function(e) {
         e.preventDefault();
     });
