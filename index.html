@@ -3,93 +3,86 @@
 
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="style.css" />
     <title>One page website for Founders and Coders</title>
 </head>
 
-<body>
-    <header id=header>
+<body id="body">
+    <header id="header">
         <div class="mainTitleImg"></div>
-        <h1 id=mainTitle>Hello Founders and Coders !</h1>
-
-    </header>
-
-    <nav>
-        <ul id=nav>
-            <li id=nav-home><a href="#">Home</a></li>
-            <li id=nav-projects><a href="#encart">About me</a></li>
-            <li id=nav-cv><a href="#portfolio">Portfolio</a></li>
-        </ul>
-    </nav>
-
-    <body id=body>
+        <h1 id="mainTitle">Hello Founders and Coders !</h1>
+        <nav>
+            <ul id="nav">
+                <li id="nav-home"><a href="#">Home</a></li>
+                <li id="nav-projects"><a href="#encart">About me</a></li>
+                <li id="nav-cv"><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </nav>
         <div class="mainTitleImg"> </div>
-     
-        <section>
-            <div id=encart>
-                <h3>About me</h3>
-                <p> Hello, my name is Marie. I am originally from Paris, but I currently live in Zurich 
-                    and I am planning to move in London. As a matter of fact, I prefer to live in a English speaking country, 
-                    and close to my family<br>
-                    I graduated with a health care management master degree in 2015 and I worked in this 
-                    field until 2019. I worked in hospital, nursing home, schizophrenic helping structure and intellectual disability helping structure. <br>
-                    In 2019, I moved to Switzerland.
-                    
-                    At that time, computer science was just a hobby, then I tried to improve my skills in JavaScript to transform this passion 
-                    into a job. <br>
-                    </p>
-
-                <h3>Why am I applying to this programme ?</h3>
-                <p>When I began to learn HTML and CSS, it was just by curiosity, but I liked it so I imagined 
-                    that I could do my own website. I have a few ideas to develop, but I still miss some skills before
-                    being ready to do so. <br>
-                    This programme could help me to improve my skills, not to just develop a website, but to be part 
-                    of a bigger project by being in a company and then maybe create mine.<br>
-                    When I was working in health care, we (the whole health care system) were always struggling with 
-                    the software limitations. Today I can see how easy the problems could be resolved and I wonder 
-                    how I can help the health care providers. <br>
-                    
+    </header>
+    <section>
+        <div id="encart">
+            <h3>About me</h3>
+            <p> Hello, my name is Marie. I am originally from Paris, but I currently live in Zurich 
+                and I am planning to move in London. As a matter of fact, I prefer to live in a English speaking country, 
+                and close to my family<br>
+                I graduated with a health care management master degree in 2015 and I worked in this 
+                field until 2019. I worked in hospital, nursing home, schizophrenic helping structure and intellectual disability helping structure. <br>
+                In 2019, I moved to Switzerland.
+                
+                At that time, computer science was just a hobby, then I tried to improve my skills in JavaScript to transform this passion 
+                into a job. <br>
                 </p>
-            </div>
 
-            <div id="survey">
-                <h2> What is your ideal applicant ? </h2>
-                <form name ="formSurvey" class="form" id="formSurvey" onsubmit="return submitSurvey()">
-                    <ul>
-                        <li><label><input type="checkbox" name="personality" id="p1"> Serious about a career in web development </label>  </li>
-                        <li><label><input type="checkbox" name="personality" id="p2"> Comfortable with uncertainty </label>  </li>
-                        <li><label><input type="checkbox" name="personality" id="p3"> Loves to take initiatives </label> </li>
-                        <li><label><input type="checkbox" name="personality" id="p4"> Believes strongly in the value of community </label> </li>
-                        <li> <label><input type="checkbox" name="personality" id="p5"> Do the best to help the others </label> </li>
-                    </ul>
-                    <button id="submitButton" type="submit">Submit</button>
-                </form>
-            </div>
-        </section>
+            <h3>Why am I applying to this programme ?</h3>
+            <p>When I began to learn HTML and CSS, it was just by curiosity, but I liked it so I imagined 
+                that I could do my own website. I have a few ideas to develop, but I still miss some skills before
+                being ready to do so. <br>
+                This programme could help me to improve my skills, not to just develop a website, but to be part 
+                of a bigger project by being in a company and then maybe create mine.<br>
+                When I was working in health care, we (the whole health care system) were always struggling with 
+                the software limitations. Today I can see how easy the problems could be resolved and I wonder 
+                how I can help the health care providers. <br>
+                <br>
+            </p>
+        </div>
 
-        <section>
-            <div id="carousel">
-                <ul id="imagesList">
-                    <li><img src="image/carousel/blue.jpg" alt="blue" /></li>
-                    <li><img src="image/carousel/brown.jpg" alt="brown" /></li>
-                    <li><img src="image/carousel/green.jpg" alt="green"></li>
-                    <li><img src="image/carousel/red.jpg" alt="red"></li>
-                    <li><img src="image/carousel/yellow.jpg" alt="yellow"></li>
+        <div id="survey">
+            <h2> What is your ideal applicant ? </h2>
+            <form name ="formSurvey" class="form" id="formSurvey" onsubmit="return submitSurvey()">
+                <ul>
+                    <li><label><input type="checkbox" name="personality" id="p1"> Serious about a career in web development </label>  </li>
+                    <li><label><input type="checkbox" name="personality" id="p2"> Comfortable with uncertainty </label>  </li>
+                    <li><label><input type="checkbox" name="personality" id="p3"> Loves to take initiatives </label> </li>
+                    <li><label><input type="checkbox" name="personality" id="p4"> Believes strongly in the value of community </label> </li>
+                    <li> <label><input type="checkbox" name="personality" id="p5"> Do the best to help the others </label> </li>
                 </ul>
-                <div id="prevImage"> 
-                    <img class="carouselButton" src="image/carousel/back-arrow.png" alt="back" /> 
-                </div> 
-                <div id="nextImage"> 
-                    <img class="carouselButton" src="image/carousel/next-arrow.png" alt="next" /> 
-                </div>
-                <div id="play">
-                    <img id="playOrPause" class="carouselButton" src="image/carousel/play-button.png" alt="play"/> 
-                </div>
-            </div>
-        </section>   
-    </body>
+                <button id="submitButton" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
 
+    <section>
+        <div id="carousel">
+            <ul id="imagesList">
+                <li><img src="image/carousel/blue.jpg" alt="blue" /></li>
+                <li><img src="image/carousel/brown.jpg" alt="brown" /></li>
+                <li><img src="image/carousel/green.jpg" alt="green"></li>
+                <li><img src="image/carousel/red.jpg" alt="red"></li>
+                <li><img src="image/carousel/yellow.jpg" alt="yellow"></li>
+            </ul>
+            <div id="prevImage"> 
+                <img class="carouselButton" src="image/carousel/back-arrow.png" alt="back" /> 
+            </div> 
+            <div id="nextImage"> 
+                <img class="carouselButton" src="image/carousel/next-arrow.png" alt="next" /> 
+            </div>
+            <div id="play">
+                <img id="playOrPause" class="carouselButton" src="image/carousel/play-button.png" alt="play"/> 
+            </div>
+        </div>
+    </section>   
+   
     <footer>
         <div id="signature">Created with love and passion</div>
         <div id="portfolio" >Portfolio:</div>
@@ -101,7 +94,6 @@
     </footer> 
 
     <script type="text/javascript" src="carousel.js"></script>
-
 </body>
 
 </html>
