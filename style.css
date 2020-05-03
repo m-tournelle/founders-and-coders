@@ -80,7 +80,6 @@ section{
     text-align: justify;
     flex : 3;
     padding-right: 30px;
-    border: solid;
 }
 
 @media handheld, screen and (max-width: 800px){
