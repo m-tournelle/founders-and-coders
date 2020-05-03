@@ -3,6 +3,38 @@
     src: url('font-aller/Aller_Rg.ttf');
 }
 
+
+/*
+    Navigation bar
+*/
+
+nav {
+    background-color: rgb(243, 250, 211);
+    overflow: hidden;
+  }
+  
+nav a {
+    float: left;
+    color: black;
+    padding: 10px;
+  }
+  
+nav a:hover {
+    background-color: #ddd;
+  }
+  
+nav div:hover {
+    background-color: #ddd;
+  }
+  
+#menu-icon {
+    display: none;
+  }
+
+#menu-icon img {
+    max-width: 20px;
+}
+
 #mainTitle {
     font-family: 'Aller';
     font-size : 2,5em;
@@ -19,35 +51,6 @@
     background-size: cover;
     border: 2px solid darkgray;
     opacity: 0.7;
-}
-/* 
-    nav
-*/
-
-#nav{
-    display: flex;
-    list-style: none;
-    margin: auto;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    min-height: 30px;
-    padding: 10px;
-}
-
-#nav-home {
-    width:10%;
-    text-align: center;
-    min-width: 70px;
-}
-#nav-projects {
-    width:10%;
-    text-align: center;
-    min-width: 70px;
-}
-#nav-cv {
-    width:10%;
-    text-align: center;
-    min-width: 70px;
 }
 
 /* 
@@ -91,8 +94,27 @@ section{
         padding-right: 0px;
     }
 
+    nav a:not(:first-child) {
+        display: none;
+    }
+    #menu-icon {
+        float: right;
+        display: block;
+        padding: 7px;
+    }
     
-    
+    nav.expandedHamburger {
+        position: relative;
+    }
+    nav.expandedHamburger div#menu-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    nav.expandedHamburger a {
+        display: block;
+        float: none;
+    }
 }
 
 p{

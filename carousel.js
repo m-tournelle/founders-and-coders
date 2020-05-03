@@ -109,7 +109,21 @@ function preventReloadOnSubmit(){
     });
 }
 
-window.onload = function(){
+
+
+
+function smallNavToggle() {
+    var x = document.getElementsByTagName("nav")[0];
+    if (x.className === "collapsedHamburger") {
+        x.className = "expandedHamburger";
+    } else {
+        x.className = "collapsedHamburger";
+    }
+}
+
+window.onload = function() {
+    let icon = document.getElementById("menu-icon");
+    icon.addEventListener("click", smallNavToggle);
     preventReloadOnSubmit();
     createCarousel();
 }
