@@ -3,12 +3,17 @@ function createCarousel() {
     let imagesList = document.getElementById("imagesList");
     let prevImage = document.getElementById("prevImage");
     let nextImage = document.getElementById("nextImage");
-    let playPauseButton = document.getElementById("playPause");
+    let playPauseButton = document.getElementById("play");
+
     let play = true;
     let currentImage = 0;
     let carouselWidth = carousel.offsetWidth;
 
     let items = imagesList.querySelectorAll("li").length - 1;
+
+    let isMoving = false;
+    imagesList.addEventListener("transitionstart", function() {isMoving = true;} );
+    imagesList.addEventListener("transitionend", function() {isMoving = false;} );
 
     function setLeftPosition(currentImage) {
         imagesList.style.left = "-" + currentImage * carouselWidth + "px";
@@ -51,20 +56,36 @@ function createCarousel() {
             playPauseToggle()
         }
     }
+    function changeImage(playPauseButton){
+        let v = playPauseButton.getAttribute("src");
+     //   if(v == "image/carousel/play-button.png"){v = "image/carousel/pause-button.png"}
+    //    else{v = "image/carousel/play-button.png"};
+        alert("pause")
+         playPauseButton.setAttribute("src", v);	
+     }
 
     function playPause() {
-        if (play) { goNext() }
-    }
-    function playPauseToggle() {
-        play = !play;
+        // does not play if carousel is already manually being moved
+        if (play && !isMoving) { goNext() }
     }
 
-    setInterval(playPause, 4000);
+    function playPauseToggle() {
+       
+        play = !play;
+        changeImage()
+    }
+
+    setInterval(playPause, 2000);
     prevImage.addEventListener("click", goPrev);
     document.addEventListener("keyup", goKey);
     nextImage.addEventListener("click", goNext);
     playPauseButton.addEventListener("click", playPauseToggle);
 };
+
+
+
+//          Survey
+
 
 function submitSurvey(){
     let p1 = document.getElementById("p1");
