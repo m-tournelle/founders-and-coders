@@ -38,14 +38,17 @@
 #nav-home {
     width:10%;
     text-align: center;
+    min-width: 70px;
 }
 #nav-projects {
     width:10%;
     text-align: center;
+    min-width: 70px;
 }
 #nav-cv {
     width:10%;
     text-align: center;
+    min-width: 70px;
 }
 
 /* 
@@ -74,6 +77,12 @@ section{
     justify-content: space-around;
 }
 
+@media(max-width: 800px){
+    section {
+        display : flex;
+        flex-direction: column;
+    }
+}
 #encart {
     text-align: justify;
     flex : 3;
