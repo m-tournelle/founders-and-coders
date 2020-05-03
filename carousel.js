@@ -3,7 +3,7 @@ function createCarousel() {
     let imagesList = document.getElementById("imagesList");
     let prevImage = document.getElementById("prevImage");
     let nextImage = document.getElementById("nextImage");
-    let playPauseButton = document.getElementById("play");
+    let playPauseButton = document.getElementById("playOrPause");
 
     let play = true;
     let currentImage = 0;
@@ -58,9 +58,8 @@ function createCarousel() {
     }
     function changeImage(playPauseButton){
         let v = playPauseButton.getAttribute("src");
-     //   if(v == "image/carousel/play-button.png"){v = "image/carousel/pause-button.png"}
-    //    else{v = "image/carousel/play-button.png"};
-        alert("pause")
+       if(v == "image/carousel/play-button.png"){v = "image/carousel/pause-button.png"}
+        else{v = "image/carousel/play-button.png"};
          playPauseButton.setAttribute("src", v);	
      }
 
@@ -70,9 +69,8 @@ function createCarousel() {
     }
 
     function playPauseToggle() {
-       
         play = !play;
-        changeImage()
+        changeImage(playPauseButton)
     }
 
     setInterval(playPause, 2000);
